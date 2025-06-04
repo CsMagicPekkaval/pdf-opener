@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Opener",
+  "version": "1.0",
+  "description": "攔截 getPDF.php 請求並一鍵打開 PDF 原始頁面",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
